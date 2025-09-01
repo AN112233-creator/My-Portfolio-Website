@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://an112233-creator.github.io/My-Portfolio-Website",
+  "homepage": "https://an112233-creator.github.io/my-portfolio-website",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
