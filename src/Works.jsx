@@ -4,16 +4,10 @@ import "./works.css";
 import { FaSearch } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import WebApplication from "../IMG/web-application.jpg";
-import webDesign from "../IMG/web-design.jpg";
-import Image1 from "../IMG/Image-1.jpg";
 import Image2 from "../IMG/Image-2.jpg";
-import Image3 from "../IMG/Image-3.jpg";
 import Image4 from "../IMG/image-4.jpg";
-import Image7 from "../IMG/image-7.jpg";
-import Image8 from "../IMG/image-8.jpg";
 import Image9 from "../IMG/app.jpg";
-import Image10 from "../IMG/web.jpg";
+
 
 const portfolioItems = [
   {
