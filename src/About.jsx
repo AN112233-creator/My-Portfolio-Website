@@ -4,7 +4,7 @@ import React from "react";
 import "aos/dist/aos.css";
    import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
    import { faFacebookF, faTwitter, faGooglePlusG, faGithub, faTiktok, faLinkedin  } from '@fortawesome/free-brands-svg-icons';
- import "./about.css"; 
+ import "./About.css"; 
 import profileImg from "../IMG/My-image.png"; // include the correct file extension
 
 const About = () => {
