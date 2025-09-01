@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --primary-color: #4f9edb;
+  --secondary-color: #2ecc71;
+  --font-family: "Roboto Condensed", serif;
+  --font-size: 14px;
+  --background-color: #f5f5f5;
+  --text-color: #e0e0e0;
+  --text-color-Small-about:rgb(160, 160, 160);
+  --HOVER-Color: rgb(255, 255, 255);
+  --Nav-active: rgb(15, 15, 15);
+  --UL-BColor:rgb(255, 255, 255);
+  --UL-COLOR: rgb(78, 78, 78);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  overflow: visible;
+  
+}
+
+.hero {
+  background-image: url('../IMG/new-image.jpg'); /* Update path */
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+}
+
+ /* .navbar{
+   display: flex;
+  justify-content: space-between; 
+  justify-self: center;
+  width: 100%;
+  position:sticky;
+   top: 0;  
+  padding: 24px 120px;
+  z-index: 1000000;
+  transition: 0.7s ease-in-out; 
+ 
+} 
+ */
+/* .white-nav{
+  transition: 0.8s ease-in-out; 
+  background-color: #ffffff;
+   position: fixed;
+   top: 0;
+   box-shadow: 2px 2px 10px rgb(192, 192, 192);
+}
+
+.white-nav a{
+  color: black;
+}
+
+.white-nav .logo {
+  color: black;
+}
+.white-nav .nav-links .active {
+  border-bottom: 2px solid black;
+} 
+nav ul li{
+  list-style-type: none;
+
+}
+
+nav ul li a {
+  text-decoration: none;
+  color:var(--text-color);
+  text-transform: uppercase;
+  font-size: var(--font-size);
+  letter-spacing: 2px; 
+}
+nav ul li a:hover {
+  color: var(--HOVER-Color) ;
+  transition: 0.4s ease;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 30px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.nav-links li {
+  cursor: pointer;
+}
+ .nav-links .active {
+  border-bottom: 2px solid white;
+}  */
+
+
+/* Hero Text */
+.hero-text {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 0 120px;
+  top: 40%;
+  transform: translateY(-40%); 
+}
+
+.hero-text h1 {
+  font-size: 84px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.hero-text h1 span {
+  font-weight: bolder;
+  color: white;
+}
+
+.hero-text strong{
+  font-size: 28px;
+  color: white;
+}
+
+.hero-text p {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.typewriter {
+  transition: color 0.3s;
+  font-weight: bold;
+  letter-spacing: 1px;
+  white-space: pre;
+  color: white;
+}
+
+.cursor {
+  display: inline-block;
+  width: 1ch;
+  animation: blink 1s steps(1) infinite;
+  color: white;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Arrow */
+.down-arrow {
+  position: absolute;
+  bottom: 40px;
+  left: 10%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  animation: bounce 2s infinite;
+  z-index: 2;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+}
+
+/* SVG Curve */
+ /*  .curve {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  line-height: 0;
+  z-index: 2;
+  height: 180px;
+}  */ 
+
+  /*  .curve svg {
+  display: block;
+  width: 100%;
+  height: 100px;
+}   */
+
+/* .diagonal-curve {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: white;
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  z-index: 2;
+}   */
+
+ /* .hero-curve {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 2;
+}
+
+.hero-curve svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}  */
+
+.hero-curve {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  line-height: 0;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.hero-curve svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+} 
+
+@media (max-width: 768px){
+
+
+.hero-text {
+ 
+  padding: 0 40px;
+   
+}
+
+.hero-text h1 {
+  font-size: 54px;
+  
+}
+
+.hero-text h1 span {
+  font-weight: bolder;
+}
+
+.hero-text strong{
+  font-size: 22px;
+}
+
+.hero-text p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+  
+  
+
+ 
+
+
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+p, small {
+  color: rgb(151, 151, 151);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #b3b3b3 !important; /* Change arrow color */
+  /* font-weight: ; */ /* Make it more visible */
+}

@@ -1,0 +1,117 @@
+
+.works-section {
+  padding: 60px 80px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.section-subtitle {
+  color: #777;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.filter-buttons {
+  margin: 20px 0;
+}
+
+.filter-buttons button {
+  border: none;
+  background: none;
+  margin: 0 10px;
+  color: #111;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.filter-buttons button:hover {
+  color: #555;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.portfolio-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0px;
+  box-shadow: 4 5px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  border: 14px solid #f8f8f8;
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+ .portfolio-card:hover img {
+  transform: scale(1.1);
+} 
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.822);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.portfolio-card:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.title {
+  color: black;
+  text-transform: capitalize;
+}
+
+.search-icon {
+  font-size: 38px;
+  color: #111;
+  padding: 8px;
+  box-shadow: 4px 4px 8px;
+  border-radius: 4px;
+ 
+ 
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .works-section {
+    padding: 40px 20px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}
