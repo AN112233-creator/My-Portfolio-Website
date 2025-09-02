@@ -6,8 +6,7 @@ import "aos/dist/aos.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "../blog.css";
-import rail from "./images/rail.jpg"
-import smartHome from "./images/smart-home.jpg"
+import smartHome from "./images/Smart-home.jpg"
 import sustainableHome from "./images/sustainable-const.jpg"
 import BuildingReg from "./images/build-reg.jpg"
 import woodFur from "./images/wood.jpg"
